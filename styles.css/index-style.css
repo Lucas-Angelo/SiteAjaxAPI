@@ -1,0 +1,27 @@
+.box-Noticia {
+    padding: 8px;
+    margin: 0.50%;
+    overflow: auto;
+    color: dimgray;
+    clear: both;
+    border: rgb(233, 186, 99) solid 2px;
+}
+
+.box-Noticia img {
+    float: left;
+    margin-right: 10px;
+    width: 180px;
+    height: 110px;
+}
+
+.box-Noticia .titulo{
+    font-weight: 700;
+}
+
+.box-Noticia .creditos{
+    color: red;
+}
+
+.box-Noticia .text{
+
+}
