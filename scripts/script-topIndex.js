@@ -1,10 +1,10 @@
-//const API_KEY = '8889a23cfd1f46329c49a2998ddba4e3';
+const API_KEY = '8889a23cfd1f46329c49a2998ddba4e3';
 
 function exibeNoticias () {
     let divTela = document.getElementById('conteudo');
     let texto = '';
 
-    let n = parseInt(0);
+    let n = 0;
 
     let dados = JSON.parse(this.responseText);
     for(i=0; i<dados.articles.length; i++)
@@ -31,12 +31,10 @@ function exibeNoticias () {
 }
 
 function executaPesquisa () {
-    let query = document.getElementById('valuePesquisa').value;
-
     let xhr = new XMLHttpRequest();
     xhr.onload = exibeNoticias;
-    xhr.open('GET', `https://newsapi.org/v2/everything?language=pt&q=${query}&apiKey=${API_KEY}`)
+    xhr.open('GET', `https://newsapi.org/v2/top-headlines?country=br&apiKey=${API_KEY}`)
     xhr.send();
 }
 
-document.getElementById('btnPesquisa').addEventListener('click', executaPesquisa);
+executaPesquisa()
