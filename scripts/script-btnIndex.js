@@ -38,5 +38,3 @@ function executaPesquisa () {
 }
 
 document.getElementById('btnPesquisa').addEventListener('click', executaPesquisa);
-
-executaPesquisa();
