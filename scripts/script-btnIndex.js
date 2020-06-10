@@ -16,7 +16,7 @@ function exibeNoticias () {
         texto = texto + `
             <div class="box-Noticia">
                 <img src="${noticia.urlToImage!=null?noticia.urlToImage:`https://source.unsplash.com/random/120x80/?sig=${n}`}" alt="">
-                <span class="titutlo">${noticia.title!=null?noticia.title:'Notícia sem título'}</span><br>
+                <span class="titulo">${noticia.title!=null?noticia.title:'Notícia sem título'}</span><br>
                 <span class="creditos">${data.toLocaleDateString()} - ${noticia.source.name} - ${noticia.author!=null?noticia.author:'Autor não definido'}</span><br>
                 <span class="text">
                 ${noticia.content!=null?noticia.content:'Texto não encontrado'}<a href="${noticia.url}" target="_blank"> Leia mais...</a>

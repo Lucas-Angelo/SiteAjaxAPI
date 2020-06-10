@@ -2,9 +2,10 @@
     padding: 8px;
     margin: 0.50%;
     overflow: auto;
-    color: dimgray;
+    color: #cfcfcf;
     clear: both;
-    border: rgb(233, 186, 99) solid 2px;
+    border: rgb(0, 0, 0) solid 2px;
+    border-radius: 8px;
 }
 
 .box-Noticia img {
@@ -12,16 +13,37 @@
     margin-right: 10px;
     width: 180px;
     height: 110px;
+    color: black;
+    border: black solid 1px;
+    border-radius: 8px;
 }
 
 .box-Noticia .titulo{
     font-weight: 700;
+    color: rgba(34, 33, 33, 0.849);
 }
 
 .box-Noticia .creditos{
-    color: red;
+    color: rgb(146, 43, 43);
 }
 
 .box-Noticia .text{
+    color: black;
+}
+
+.noticiasIndex h3{
+    color: black;
+    margin: 8px;
+    padding: 8px;
+    border: black solid 2px;
+    background-color: rgba(128, 128, 128, 0.411);
+    text-align: center;
+}
+
+.navbar{
+    background-color: rgb(128, 128, 128);
+}
+
+#menuLateral{
 
 }

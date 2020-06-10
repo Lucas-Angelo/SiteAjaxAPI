@@ -5,7 +5,7 @@ function exibeTexto () {
     let divTela = document.getElementById('pesquisaAtual');
     let texto = '';
 
-    texto = `<h3 class="ml-2" id="pesquisaAtual">Notícias sobre: ${query}</h3>`;
+    texto = `<span id="pesquisaAtual">Notícias sobre: "${query}"</span>`;
     
     divTela.innerHTML = texto;
 
