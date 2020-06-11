@@ -36,18 +36,51 @@
     margin: 8px;
     padding: 8px;
     border: black solid 2px;
-    background-color: rgba(128, 128, 128, 0.411);
+    background-color: rgba(216, 216, 216, 0.815);
     text-align: center;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .navbar{
     margin-top: 8px;
-    background-color: rgb(128, 128, 128);
+    background-color: rgb(168, 168, 168);
     border-radius: 8px;
 }
 
-#menuLateral{
+.form-control{
+    border-radius: 8px;
+}
 
+#btnPesquisa{
+    background-color: rgba(128, 128, 128, 0.466);
+    border: black solid 1px;
+    border-radius: 8px;
+}
+
+#btnPesquisa:hover{
+    background-color: ghostwhite;
+}
+
+#menuLateral{
+    margin: 4px;
+    margin-top: 2.5%;
+    height: 680px;
+    border: black solid 2px;
+    display: flex;
+}
+
+#categorias{
+    border: black solid 1px;
+    height: 175px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+#categorias h4{
+    margin-top: 8px;
+}
+
+#categoriasTitle{
+    text-align: center !important;
 }
