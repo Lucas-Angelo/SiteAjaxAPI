@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DailyPaper</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
 
@@ -22,10 +23,49 @@
 </head>
 
 <body>
-    
+
 
     <div class="container-fluid">
 
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Menu salvar pesquisas</h4>
+                        <button type="button" class="close" data-dismiss="modal"></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+
+                        <form class="form-inline m-0 p-0">
+                            <h6>Titulo do menu</h6>
+                            <input class="form-control mr-sm-1" type="search" placeholder="Um título.."
+                                aria-label="Search" id="tituloDoMenu" style="float: right;">
+                        </form>
+
+                        <br>
+
+                        <form class="form-inline m-0 p-0">
+                            <h6>Texto da pesquisa</h6>
+                            <input class="form-control mr-sm-1" type="search" placeholder="O texto..."
+                                aria-label="Search" id="valuePraSalvarModal" style="float: right;">
+                        </form>
+
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal"
+                            id="btnQueSalva">Concluir</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
 
         <div class="row">
 
@@ -33,10 +73,11 @@
                 <nav class="navbar navbar-light justify-content-between">
                     <a class="navbar-brand" href="/">DailyPaper</a>
                     <form class="form-inline">
-                      <input class="form-control mr-sm-2" type="search" placeholder="Procurar..." aria-label="Search" id="valuePesquisa">
-                      <button class="btn my-2 my-sm-0" type="button" id="btnPesquisa">Pesquisar</button>
+                        <input class="form-control mr-sm-2" type="search" placeholder="Procurar..." aria-label="Search"
+                            id="valuePesquisa">
+                        <button class="btn my-2 my-sm-0" type="button" id="btnPesquisa">Pesquisar</button>
                     </form>
-                  </nav>
+                </nav>
             </div>
 
         </div>
@@ -48,9 +89,13 @@
                 <div class="row noticiasIndex">
                     <div class="col-12 col-sm-12 col-md-12 col-lg-12">
 
-                        <h3>
-                            <span id="pesquisaAtual">Top notícias no Brasil</span>
-                        </h3>
+                        <div class="menTop">
+
+                            <h3 id="tituloPA">
+                                <span id="pesquisaAtual">Top notícias no Brasil</span>
+                            </h3>
+
+                        </div>
 
                         <div id="conteudo">
 
@@ -59,7 +104,9 @@
                                 <span class="titulo">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span><br>
                                 <span class="creditos">01/05/2020 - BBC News - Fulano de Tal</span><br>
                                 <span class="text">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam magni velit eum placeat. Impedit sit, veritatis dignissimos soluta eveniet eos voluptate quos voluptates at itaque omnis beatae aut hic labore.
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam magni velit eum
+                                    placeat. Impedit sit, veritatis dignissimos soluta eveniet eos voluptate quos
+                                    voluptates at itaque omnis beatae aut hic labore.
                                     <a href="#" target="_blank"> Leia mais...</a>
                                 </span>
                             </div>
@@ -69,7 +116,9 @@
                                 <span class="titulo">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span><br>
                                 <span class="creditos">01/05/2020 - BBC News - Fulano de Tal</span><br>
                                 <span class="text">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam magni velit eum placeat. Impedit sit, veritatis dignissimos soluta eveniet eos voluptate quos voluptates at itaque omnis beatae aut hic labore.
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam magni velit eum
+                                    placeat. Impedit sit, veritatis dignissimos soluta eveniet eos voluptate quos
+                                    voluptates at itaque omnis beatae aut hic labore.
                                     <a href="#"> Leia mais...</a>
                                 </span>
                             </div>
@@ -79,7 +128,9 @@
                                 <span class="titulo">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span><br>
                                 <span class="creditos">01/05/2020 - BBC News - Fulano de Tal</span><br>
                                 <span class="text">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam magni velit eum placeat. Impedit sit, veritatis dignissimos soluta eveniet eos voluptate quos voluptates at itaque omnis beatae aut hic labore.
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam magni velit eum
+                                    placeat. Impedit sit, veritatis dignissimos soluta eveniet eos voluptate quos
+                                    voluptates at itaque omnis beatae aut hic labore.
                                     <a href="#"> Leia mais...</a>
                                 </span>
                             </div>
@@ -89,7 +140,9 @@
                                 <span class="titulo">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span><br>
                                 <span class="creditos">01/05/2020 - BBC News - Fulano de Tal</span><br>
                                 <span class="text">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam magni velit eum placeat. Impedit sit, veritatis dignissimos soluta eveniet eos voluptate quos voluptates at itaque omnis beatae aut hic labore.
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam magni velit eum
+                                    placeat. Impedit sit, veritatis dignissimos soluta eveniet eos voluptate quos
+                                    voluptates at itaque omnis beatae aut hic labore.
                                     <a href="#"> Leia mais...</a>
                                 </span>
                             </div>
@@ -99,7 +152,9 @@
                                 <span class="titulo">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span><br>
                                 <span class="creditos">01/05/2020 - BBC News - Fulano de Tal</span><br>
                                 <span class="text">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam magni velit eum placeat. Impedit sit, veritatis dignissimos soluta eveniet eos voluptate quos voluptates at itaque omnis beatae aut hic labore.
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam magni velit eum
+                                    placeat. Impedit sit, veritatis dignissimos soluta eveniet eos voluptate quos
+                                    voluptates at itaque omnis beatae aut hic labore.
                                     <a href="#"> Leia mais...</a>
                                 </span>
                             </div>
@@ -109,7 +164,9 @@
                                 <span class="titulo">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span><br>
                                 <span class="creditos">01/05/2020 - BBC News - Fulano de Tal</span><br>
                                 <span class="text">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam magni velit eum placeat. Impedit sit, veritatis dignissimos soluta eveniet eos voluptate quos voluptates at itaque omnis beatae aut hic labore.
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam magni velit eum
+                                    placeat. Impedit sit, veritatis dignissimos soluta eveniet eos voluptate quos
+                                    voluptates at itaque omnis beatae aut hic labore.
                                     <a href="#"> Leia mais...</a>
                                 </span>
                             </div>
@@ -119,7 +176,9 @@
                                 <span class="titulo">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span><br>
                                 <span class="creditos">01/05/2020 - BBC News - Fulano de Tal</span><br>
                                 <span class="text">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam magni velit eum placeat. Impedit sit, veritatis dignissimos soluta eveniet eos voluptate quos voluptates at itaque omnis beatae aut hic labore.
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam magni velit eum
+                                    placeat. Impedit sit, veritatis dignissimos soluta eveniet eos voluptate quos
+                                    voluptates at itaque omnis beatae aut hic labore.
                                     <a href="#"> Leia mais...</a>
                                 </span>
                             </div>
@@ -129,7 +188,9 @@
                                 <span class="titulo">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span><br>
                                 <span class="creditos">01/05/2020 - BBC News - Fulano de Tal</span><br>
                                 <span class="text">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam magni velit eum placeat. Impedit sit, veritatis dignissimos soluta eveniet eos voluptate quos voluptates at itaque omnis beatae aut hic labore.
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam magni velit eum
+                                    placeat. Impedit sit, veritatis dignissimos soluta eveniet eos voluptate quos
+                                    voluptates at itaque omnis beatae aut hic labore.
                                     <a href="#"> Leia mais...</a>
                                 </span>
                             </div>
@@ -139,7 +200,9 @@
                                 <span class="titulo">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span><br>
                                 <span class="creditos">01/05/2020 - BBC News - Fulano de Tal</span><br>
                                 <span class="text">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam magni velit eum placeat. Impedit sit, veritatis dignissimos soluta eveniet eos voluptate quos voluptates at itaque omnis beatae aut hic labore.
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam magni velit eum
+                                    placeat. Impedit sit, veritatis dignissimos soluta eveniet eos voluptate quos
+                                    voluptates at itaque omnis beatae aut hic labore.
                                     <a href="#"> Leia mais...</a>
                                 </span>
                             </div>
@@ -154,9 +217,40 @@
                 <div class="row" id="menuLateral">
                     <div class="col-12 col-sm-12 col-md-12 col-lg-12">
 
-                        <div class="row" id="fontes">
+                        <div class="row" id="pesquisasSalvas">
                             <div class="col-12 col-sm-12 col-md-12 col-lg-12">
 
+                                <div class="row" id="pesquisaSave">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                        <button class="btn my-2 my-sm-0" type="button" data-toggle="modal"
+                                            data-target="#myModal" id="btnPraSalvar">Salvar Pesquisas</button>
+                                    </div>
+                                </div>
+
+                                <div class="row" id="pesquisaTitulo">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                        <h4>Pesquisas Salvas:</h4>
+                                    </div>
+                                </div>
+
+                                <div class="row" id="pesquisasOps">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 ml-5">
+                                        <div class="box-salvas">
+                                            <ul class="lista">
+                                                <li><a href="#" id="ultima1">1</a></li>
+                                                <li><a href="#" id="ultima2">2</a></li>
+                                                <li><a href="#" id="ultima3">3</a></li>
+                                                <li><a href="#" id="ultima4">4</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row" id="fontes">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                                 <div class="row" id="fontesTitle">
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                                         <h4>Fontes:</h4>
@@ -173,11 +267,10 @@
                                         </ul>
                                     </div>
                                 </div>
-
-                             </div>
+                            </div>
                         </div>
 
-                        
+
                         <div class="row" id="categorias">
                             <div class="col-12 col-sm-12 col-md-12 col-lg-12">
 
@@ -200,9 +293,9 @@
                                     </div>
                                 </div>
 
-                             </div>
+                            </div>
                         </div>
-                        
+
 
 
                     </div>
@@ -212,7 +305,7 @@
         </div>
 
         <hr>
-        
+
         <footer>
             <br><br>
             <span class="text-center d-block">
@@ -220,7 +313,8 @@
                     <a href="/"> DailyPaper</a>
                     <div class="footer-copyright text-center py-3">Todos os Direitos Reservados</div>
                     <div class="footer-copyright text-right py-3"></div>
-                    <div class="footer-copyright text-right py-3">Desenvolvido por: <a href="https://www.linkedin.com/in/lucas-angelo/" target="_blank">Lucas Ângelo</a></div>
+                    <div class="footer-copyright text-right py-3">Desenvolvido por: <a
+                            href="https://www.linkedin.com/in/lucas-angelo/" target="_blank">Lucas Ângelo</a></div>
                 </div>
             </span>
 
@@ -262,16 +356,23 @@
     <script src="/scripts/categorias/cateAtual/atualCiencia.js"></script>
     <script src="/scripts/categorias/cateAtual/atualEsportes.js"></script>
     <script src="/scripts/categorias/cateAtual/atualTecnologia.js"></script>
-    
-    
+    <script src="/scripts/ultimasPesquisas/pegarPesquisa.js"></script>
+
+
 
     <!--<script src="modules/bootstrap.js"></script>
     <script src="modules/jquery-3.5.1.slim.js"></script>
     <script src="modules/popper.js"></script>-->
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
 
 
 

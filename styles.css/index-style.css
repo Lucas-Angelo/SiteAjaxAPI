@@ -34,13 +34,50 @@
 
 .noticiasIndex h3{
     color: black;
+    width: 80%;
     margin: 8px;
     padding: 8px;
     border: black solid 2px;
     background-color: rgba(216, 216, 216, 0.815);
     text-align: center;
     margin-left: 5%;
-    margin-right: 5%;
+    margin-right: 0;
+}
+
+#btnPraSalvar{
+    background-color: rgba(62, 118, 223, 0.096);
+    border: rgb(62, 118, 223) solid 1px;
+    border-radius: 8px;
+    margin-bottom: 15px !important;
+    color: blue;
+    margin-left: 1%;
+}
+
+#btnPraSalvar:hover{
+    background-color: rgba(114, 114, 230, 0.767);
+}
+
+#tituloDoMenu{
+    border: rgb(62, 118, 223) solid 1px;
+    height: 40px;
+    margin-left: 10px;
+}
+
+#btnPraSalvarModal{
+    background-color: rgba(62, 118, 223, 0.096);
+    border: rgb(62, 118, 223) solid 1px;
+    border-radius: 8px;
+    color: blue;
+}
+
+#valuePraSalvarModal{
+    border: rgb(62, 118, 223) solid 1px;
+    height: 40px;
+    margin-left: 10px;
+}
+
+#btnPraSalvarModal:hover{
+    background-color: rgba(114, 114, 230, 0.767);
 }
 
 .navbar{
@@ -67,7 +104,7 @@
     margin: 4px;
     margin-top: 3%;
     padding: 20px;
-    height: 500px;
+    height: 800px;
     border: black solid 2px;
     overflow-x: hidden;
 }
@@ -100,4 +137,22 @@
 
 #categoriasTitle{
     text-align: center !important;
+}
+
+#pesquisasSalvas{
+    border: black solid 1px;
+    height: 250px;
+    margin: 10px 10px;
+    border-radius: 8px;
+}
+
+#pesquisaTitulo{
+    color: rgb(62, 118, 223);
+    margin-top: 10px;
+    text-align: center !important;
+}
+
+#pesquisaSave{
+    margin: 10px;
+    border-radius: 8px;
 }
